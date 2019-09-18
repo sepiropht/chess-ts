@@ -1,0 +1,37 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-airbnb",
+    "tslint-config-prettier"
+  ],
+  "jsRules": true,
+  "rules": {
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "member-ordering": false,
+    "import-name": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case",
+      "allow-snake-case"
+    ],
+    "no-console": false,
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "interface-name": false,
+    "member-access": false,
+    "array-type": [true, "array"]
+  },
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": [
+      ".next/**",
+      ".vscode/**",
+      "bin/yarn*",
+      "coverage/**",
+      "node_modules/**"
+    ]
+  }
+}
